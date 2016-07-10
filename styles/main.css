@@ -1,0 +1,36 @@
+/*
+	CSS is a search engine
+	we write search queries 
+	that are run on the HTML when 
+	the css loads
+*/
+
+/* tagName selector - specificity = 1 */
+body { /* selector */
+	background-color: orange;
+}
+#LOLDRUMPFFORPREZ {
+	color: pink;
+}
+#LOLDRUMPFFORPREZ.main-title {
+	color: blue;
+}
+
+header h1.test-title.main-title {
+	color: pink;
+}
+
+.main-title { /* className - specificity = 10 */
+	color: green;
+}
+
+.test-title {
+	color: red;
+}
+header h1.test-title {
+	color: black;
+}
+
+h1 {
+	color: white; /* rule */
+}
